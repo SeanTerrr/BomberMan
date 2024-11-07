@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sun Oct 27 18:53:45 2024
+| Date             : Mon Nov  4 22:52:20 2024
 | Host             : tendra running 64-bit major release  (build 9200)
 | Command          : report_power -file BomberGameTopLevel_power_routed.rpt -pb BomberGameTopLevel_power_summary_routed.pb -rpx BomberGameTopLevel_power_routed.rpx
 | Design           : BomberGameTopLevel
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.083        |
+| Total On-Chip Power (W)  | 0.097        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.012        |
-| Device Static (W)        | 0.072        |
+| Dynamic (W)              | 0.024        |
+| Device Static (W)        | 0.073        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |    14061 |       --- |             --- |
-|   LUT as Logic |     0.004 |     9322 |     20800 |           44.82 |
-|   CARRY4       |    <0.001 |      999 |      8150 |           12.26 |
-|   Register     |    <0.001 |     1440 |     41600 |            3.46 |
-|   BUFG         |    <0.001 |        6 |        32 |           18.75 |
-|   F7/F8 Muxes  |    <0.001 |      204 |     32600 |            0.63 |
-|   Others       |     0.000 |       91 |       --- |             --- |
-| Signals        |     0.004 |    10185 |       --- |             --- |
-| I/O            |    <0.001 |       53 |       106 |           50.00 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.083 |          |           |                 |
+| Clocks         |     0.005 |        3 |       --- |             --- |
+| Slice Logic    |     0.009 |    29699 |       --- |             --- |
+|   LUT as Logic |     0.008 |    19259 |     20800 |           92.59 |
+|   CARRY4       |    <0.001 |     2172 |      8150 |           26.65 |
+|   Register     |    <0.001 |     3433 |     41600 |            8.25 |
+|   BUFG         |    <0.001 |        7 |        32 |           21.88 |
+|   F7/F8 Muxes  |    <0.001 |      258 |     32600 |            0.79 |
+|   Others       |     0.000 |      233 |       --- |             --- |
+| Signals        |     0.007 |    21754 |       --- |             --- |
+| Block RAM      |     0.000 |       32 |        50 |           64.00 |
+| I/O            |     0.002 |       62 |       106 |           58.49 |
+| Static Power   |     0.073 |          |           |                 |
+| Total          |     0.097 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,16 +74,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.020 |       0.011 |      0.010 |
+| Vccint    |       1.000 |     0.032 |       0.021 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -142,57 +143,128 @@ Table of Contents
 +-------------------------------------------+-----------+
 | Name                                      | Power (W) |
 +-------------------------------------------+-----------+
-| BomberGameTopLevel                        |     0.012 |
-|   DebounceC                               |    <0.001 |
-|     clock_1khz                            |    <0.001 |
-|     counter                               |    <0.001 |
+| BomberGameTopLevel                        |     0.024 |
 |   Oled_display                            |    <0.001 |
+|   PlayerDeathControl                      |    <0.001 |
+|   PlayerDeathControl2                     |    <0.001 |
+|   PlayerDeathControl3                     |    <0.001 |
+|   PlayerDeathControl4                     |    <0.001 |
 |   ResetControl                            |    <0.001 |
-|   SevenSegControl                         |     0.005 |
+|   SevenSegControl                         |     0.008 |
 |     onehz                                 |    <0.001 |
 |   clock_6p25MHZ                           |    <0.001 |
-|   pixelColourControl                      |     0.003 |
+|   endGame                                 |    <0.001 |
+|   pixelColourControl                      |     0.011 |
 |     BombControl                           |    <0.001 |
-|       FindFreeBomb                        |    <0.001 |
-|       mod_inst1[0].Bombcounter            |    <0.001 |
-|       mod_inst1[1].Bombcounter            |    <0.001 |
-|       mod_inst1[2].Bombcounter            |    <0.001 |
+|       Freebomb1                           |     0.000 |
+|       Freebomb2                           |     0.000 |
+|       Freebomb3                           |     0.000 |
+|       Freebomb4                           |     0.000 |
+|       Freebomb5                           |     0.000 |
+|       Freebomb6                           |     0.000 |
+|       mod_inst1[0].Bombcounter            |     0.000 |
+|       mod_inst1[1].Bombcounter            |     0.000 |
+|       mod_inst1[2].Bombcounter            |     0.000 |
+|       mod_inst1[3].Bombcounter            |     0.000 |
+|       mod_inst1[4].Bombcounter            |     0.000 |
+|       mod_inst1[5].Bombcounter            |     0.000 |
 |       mod_inst2[0].ExplodeAnimation       |    <0.001 |
 |       mod_inst2[1].ExplodeAnimation       |    <0.001 |
 |       mod_inst2[2].ExplodeAnimation       |    <0.001 |
+|       mod_inst2[3].ExplodeAnimation       |    <0.001 |
+|       mod_inst2[4].ExplodeAnimation       |    <0.001 |
+|       mod_inst2[5].ExplodeAnimation       |    <0.001 |
+|       mod_inst[0].renderbomby             |     0.000 |
+|         flickerBomb                       |     0.000 |
+|         staticbomb                        |     0.000 |
+|       mod_inst[1].renderbomby             |     0.000 |
+|         flickerBomb                       |     0.000 |
+|         staticbomb                        |     0.000 |
+|       mod_inst[2].renderbomby             |     0.000 |
+|         flickerBomb                       |     0.000 |
+|         staticbomb                        |     0.000 |
+|       mod_inst[3].renderbomby             |     0.000 |
+|         flickerBomb                       |     0.000 |
+|         staticbomb                        |     0.000 |
+|       mod_inst[4].renderbomby             |     0.000 |
+|         flickerBomb                       |     0.000 |
+|         staticbomb                        |     0.000 |
+|       mod_inst[5].renderbomby             |     0.000 |
+|         flickerBomb                       |     0.000 |
+|         staticbomb                        |     0.000 |
 |     ColourControl                         |    <0.001 |
 |       Player1                             |    <0.001 |
 |         counter                           |     0.000 |
-|       Player2                             |     0.000 |
+|       Player2                             |    <0.001 |
 |         counter                           |     0.000 |
 |       Player3                             |    <0.001 |
 |         counter                           |     0.000 |
 |       Player4                             |    <0.001 |
 |         counter                           |     0.000 |
+|       draw                                |     0.000 |
+|       nolabel_line139                     |     0.000 |
+|       paused                              |    <0.001 |
 |       player_blink                        |    <0.001 |
+|       player_four                         |    <0.001 |
+|       player_one                          |    <0.001 |
+|       player_three                        |    <0.001 |
+|       player_two                          |     0.000 |
+|       reset                               |    <0.001 |
+|       start                               |    <0.001 |
 |     ConcreteBlock                         |     0.000 |
 |       Concrete                            |     0.000 |
 |         outer_loop[12].mod_inst[10].Block |     0.000 |
 |     Player1MovementControl                |    <0.001 |
-|       Player1                             |     0.000 |
-|         Player1                           |     0.000 |
 |       TrackPlayer1Square                  |    <0.001 |
 |       clk40hz                             |    <0.001 |
 |     Player2MovementControl                |    <0.001 |
-|       Player1                             |     0.000 |
-|         Player1                           |     0.000 |
 |       TrackPlayer1Square                  |    <0.001 |
 |       clk40hz                             |    <0.001 |
 |     Player3MovementControl                |    <0.001 |
-|       Player1                             |     0.000 |
-|         Player1                           |     0.000 |
 |       TrackPlayer1Square                  |    <0.001 |
 |       clk40hz                             |    <0.001 |
 |     Player4MovementControl                |    <0.001 |
-|       Player1                             |     0.000 |
-|         Player1                           |     0.000 |
 |       TrackPlayer1Square                  |    <0.001 |
 |       clk40hz                             |    <0.001 |
+|     al                                    |    <0.001 |
+|       nolabel_line41                      |     0.000 |
+|       nolabel_line48                      |     0.000 |
+|     clk40hz2                              |    <0.001 |
+|     jones                                 |    <0.001 |
+|       nolabel_line41                      |     0.000 |
+|       nolabel_line48                      |     0.000 |
+|       nolabel_line55                      |     0.000 |
+|       nolabel_line62                      |     0.000 |
+|     master_rx_module                      |    <0.001 |
+|     master_rx_module2                     |    <0.001 |
+|     master_rx_module3                     |    <0.001 |
+|     master_tx_module1                     |    <0.001 |
+|       uart_tx_inst                        |    <0.001 |
+|     master_tx_module2                     |    <0.001 |
+|       uart_tx_inst                        |    <0.001 |
+|     master_tx_module3                     |    <0.001 |
+|       uart_tx_inst                        |    <0.001 |
+|     master_tx_module4                     |    <0.001 |
+|       uart_tx_inst                        |    <0.001 |
+|     rob                                   |     0.000 |
+|       nolabel_line41                      |     0.000 |
+|       nolabel_line48                      |     0.000 |
+|       nolabel_line55                      |     0.000 |
+|     slave_rx_module                       |    <0.001 |
+|     slave_rx_module2                      |    <0.001 |
+|     slave_rx_module3                      |    <0.001 |
+|     slave_rx_module4                      |    <0.001 |
+|     slave_tx_module                       |    <0.001 |
+|       uart_tx_inst_slave                  |    <0.001 |
+|     slave_tx_module2                      |    <0.001 |
+|       uart_tx_inst_slave                  |    <0.001 |
+|     slave_tx_module3                      |    <0.001 |
+|       uart_tx_inst_slave                  |    <0.001 |
+|     wiz                                   |    <0.001 |
+|       nolabel_line41                      |     0.000 |
+|       nolabel_line48                      |     0.000 |
+|       nolabel_line55                      |     0.000 |
+|       nolabel_line62                      |     0.000 |
 |   twohundredhz                            |    <0.001 |
 +-------------------------------------------+-----------+
 

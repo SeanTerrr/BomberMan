@@ -22,10 +22,11 @@
 
 module SevenSegDisplay(
     input clk6p25m, clk200hz,
-    input start_game ,
+    input start_game , pause,resetting,
     output reg[3:0] an = 4'b1111,
     output reg[6:0] seg = 7'b111_1111,
-    output reg dp = 1'b1
+    output reg dp = 1'b1 ,
+    output reg timer_reached = 0
 );      
     wire clk1hz;
     var_clock onehz(.clk(clk6p25m) , .M(3124999) , . SLOW_CLOCK(clk1hz));
@@ -37,12 +38,19 @@ module SevenSegDisplay(
     
     always @ (posedge clk1hz)
     begin
-        if(start_game)
+        if(start_game & ~pause & ~resetting)
         begin
-            total_seconds <= total_seconds - 1;
+            total_seconds <= total_seconds == 0 ? 0 : total_seconds - 1;
         end
-        else begin
+        else if (~start_game)
+        begin
             total_seconds <= game_mins*60 + game_seconds;
+            timer_reached <= 0;
+        end
+        
+        if(total_seconds == 0)
+        begin
+            timer_reached <= 1;
         end
         durations[3] <= (total_seconds / 600);
         durations[2] <= (total_seconds / 60) % 10;

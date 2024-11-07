@@ -23,7 +23,7 @@
 module slave_tx(
     input clk,
     input reset,
-    input btnU, btnD, btnL, btnR, DebouncedBtnC,
+    input btnU, btnD, btnL, btnR, DebouncedBtnC, SW,
     output wire tx,  // Changed to wire
     output reg start
 );
@@ -37,22 +37,22 @@ module slave_tx(
         end else if (tx_busy == 1'b0) begin
             // Encode button presses into movement commands
             if (btnU) begin
-                tx_data <= 32'h01; // Up command
+                tx_data <= {SW,31'h01}; // Up command
                 start <= 1;
             end else if (btnD) begin
-                tx_data <= 32'h02; // Down command
+                tx_data <= {SW,31'h02}; // Down command
                 start <= 1;
             end else if (btnL) begin
-                tx_data <= 32'h03; // Left command
+                tx_data <= {SW,31'h03}; // Left command
                 start <= 1;
             end else if (btnR) begin
-                tx_data <= 32'h04; // Right command
+                tx_data <= {SW,31'h04}; // Right command
                 start <= 1;
             end else if (DebouncedBtnC) begin
-                tx_data <= 32'h05;
+                tx_data <= {SW,31'h05};
                 start <= 1;
             end else begin
-                tx_data <= 32'h06;
+                tx_data <= {SW,31'h06};
                 start <= 1;
             end
         end

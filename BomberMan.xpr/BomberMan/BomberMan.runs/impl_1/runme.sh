@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.runs/impl_1'
+HD_PWD='C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

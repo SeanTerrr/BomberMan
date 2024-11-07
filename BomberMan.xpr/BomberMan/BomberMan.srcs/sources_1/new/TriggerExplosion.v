@@ -22,13 +22,9 @@
 
 module TriggerExplosion #(parameter[6:0] Maxbombcount = 5)(
     input[6:0] BombBlock ,
-    input [1 : 0] WhichPlayerBomb,
-    input [2:0] Player1SW,
     input active,
     input[69:0] blocksAffectedByExplosion,
     output immediate_explode
 );
-    wire ExplodeByExplosion = blocksAffectedByExplosion[BombBlock] & active;
-    wire ExplodeByManual = &Player1SW & (WhichPlayerBomb == 0);
-    assign immediate_explode = (ExplodeByExplosion | ExplodeByManual) ? 1 : 0;
+    assign immediate_explode = blocksAffectedByExplosion[BombBlock] & active;
 endmodule

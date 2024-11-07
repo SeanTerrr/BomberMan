@@ -23,8 +23,6 @@
 module BombCounter(
     input clk6p25m ,
     input immediate_explode,
-    input[7:0] FreeBomb,
-    input[7:0] MyNumber,
     input edge_registered ,
     output reg active = 0
 );
@@ -34,7 +32,7 @@ module BombCounter(
     always @ (posedge clk6p25m)
     begin
         //might cause the problem of false activation if edge_registered is still active
-        if(edge_registered && (MyNumber == FreeBomb))
+        if(edge_registered)
         begin
             active <= 1;
         end
@@ -45,7 +43,8 @@ module BombCounter(
             if(count == 0 | immediate_explode)
             begin
                 active <= 1'b0;
-                count <= 32'd31250000;
+                count <= 32'd2500_0000; //rmb to change
+                //count <= 32'd625_0000;
             end
         end
     end

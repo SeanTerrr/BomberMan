@@ -27,7 +27,7 @@ module uart_rx_new(
     output reg [31:0] data, // Received 32-bit data
     output reg valid    // Data validity flag
 );
-    parameter CLKS_PER_BIT = 5208; // For 9600 baud rate, assuming 100 MHz clock
+    parameter CLKS_PER_BIT = 1302; // For 9600 baud rate, assuming 100 MHz clock
 
     reg [13:0] clk_cnt;   // Clock counter for baud rate
     reg [4:0] bit_idx;    // Index for received bits

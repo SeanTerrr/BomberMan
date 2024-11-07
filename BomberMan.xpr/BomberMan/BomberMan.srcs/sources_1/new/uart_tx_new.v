@@ -28,7 +28,7 @@ module uart_tx_new(
     output reg tx,       // UART transmission line
     output reg tx_busy   // Busy status indicator
 );
-    parameter CLKS_PER_BIT = 5208; // For 19200 baud rate, assuming 100 MHz clock
+    parameter CLKS_PER_BIT = 1302; // For 19200 baud rate, assuming 100 MHz clock
 
     reg [4:0] bit_idx;      // Index for transmitted bits
     reg [13:0] clk_cnt;     // Clock counter for baud rate

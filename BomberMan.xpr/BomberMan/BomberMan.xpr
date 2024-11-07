@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/rexko/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-14860-tendra/PrjAr/_X_/BomberMan.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="30bb2e40db0e44d189e4858c0698a140"/>
+    <Option Name="Id" Val="df5e4e2df83042708f760ab2f4dd7de4"/>
     <Option Name="Part" Val="xc7a35tcpg236-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -21,7 +21,6 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
@@ -31,7 +30,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="34"/>
+    <Option Name="WTXSimLaunchSim" Val="84"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -61,7 +60,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/new/AnimateDeath.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/AnimateDeath.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/AnimateDeath.v"/>
           <Attr Name="ImportTime" Val="1729695234"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -70,7 +69,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/BlockColourPixel.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BlockColourPixel.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BlockColourPixel.v"/>
           <Attr Name="ImportTime" Val="1729769060"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -79,7 +78,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/BlockIsImmutable.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BlockIsImmutable.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BlockIsImmutable.v"/>
           <Attr Name="ImportTime" Val="1729747518"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -88,7 +87,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Bomb.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Bomb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Bomb.v"/>
           <Attr Name="ImportTime" Val="1729824647"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -97,17 +96,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/BombCounter.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BombCounter.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BombCounter.v"/>
           <Attr Name="ImportTime" Val="1729766021"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/ButtonDebouncing.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/ButtonDebouncing.v"/>
-          <Attr Name="ImportTime" Val="1728835476"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -115,7 +105,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/CentreConcreteBlock.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/CentreConcreteBlock.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/CentreConcreteBlock.v"/>
           <Attr Name="ImportTime" Val="1728821420"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -124,7 +114,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/CollisionCheck.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/CollisionCheck.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/CollisionCheck.v"/>
           <Attr Name="ImportTime" Val="1728821117"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -133,7 +123,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/ConcreteBlocks.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/ConcreteBlocks.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/ConcreteBlocks.v"/>
           <Attr Name="ImportTime" Val="1728820945"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -142,8 +132,26 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Counter_100MHZ.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Counter_100MHZ.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Counter_100MHZ.v"/>
           <Attr Name="ImportTime" Val="1729226644"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/DrawScreen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/DrawScreen.v"/>
+          <Attr Name="ImportTime" Val="1730633416"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/EndScreen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/EndScreen.v"/>
+          <Attr Name="ImportTime" Val="1730541528"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -151,17 +159,17 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/ExplodeBomb.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/ExplodeBomb.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/ExplodeBomb.v"/>
           <Attr Name="ImportTime" Val="1729757673"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/FreeBomb.v">
+      <File Path="$PSRCDIR/sources_1/new/FreeBombIndi.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/FreeBomb.v"/>
-          <Attr Name="ImportTime" Val="1729769043"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/FreeBombIndi.v"/>
+          <Attr Name="ImportTime" Val="1730674719"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -169,6 +177,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/GameReset.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/GameReset.v"/>
+          <Attr Name="ImportTime" Val="1730010559"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -176,7 +186,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Oled_Display.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Oled_Display.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Oled_Display.v"/>
           <Attr Name="ImportTime" Val="1728705237"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -185,7 +195,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/PixelControl.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/PixelControl.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/PixelControl.v"/>
           <Attr Name="ImportTime" Val="1729767574"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -194,17 +204,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/PixelDataControl.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/PixelDataControl.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/PixelDataControl.v"/>
           <Attr Name="ImportTime" Val="1729695290"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/Player.v">
-        <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Player.v"/>
-          <Attr Name="ImportTime" Val="1728739249"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -212,6 +213,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/PlayerDeath.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/PlayerDeath.v"/>
+          <Attr Name="ImportTime" Val="1730010559"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -219,8 +222,17 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/PlayerMovement.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/PlayerMovement.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/PlayerMovement.v"/>
           <Attr Name="ImportTime" Val="1729770205"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ResetScreen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/ResetScreen.v"/>
+          <Attr Name="ImportTime" Val="1730648755"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -228,7 +240,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/SevenSegDisplay.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/SevenSegDisplay.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/SevenSegDisplay.v"/>
           <Attr Name="ImportTime" Val="1729825493"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -237,8 +249,17 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/SquareTracker.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/SquareTracker.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/SquareTracker.v"/>
           <Attr Name="ImportTime" Val="1729690425"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/StartingScreen.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberManMultiplayer.xpr/BomberMan/BomberMan.srcs/sources_1/new/StartingScreen.v"/>
+          <Attr Name="ImportTime" Val="1730339778"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -246,7 +267,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/TriggerExplosion.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/TriggerExplosion.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/TriggerExplosion.v"/>
           <Attr Name="ImportTime" Val="1729762978"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -255,7 +276,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/Walls.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Walls.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Walls.v"/>
           <Attr Name="ImportTime" Val="1728718531"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -264,8 +285,35 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/WithinXY.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/WithinXY.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/WithinXY.v"/>
           <Attr Name="ImportTime" Val="1728749512"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/buttonGate.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/buttonGate.v"/>
+          <Attr Name="ImportTime" Val="1730644851"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/endGame.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/endGame.v"/>
+          <Attr Name="ImportTime" Val="1730670610"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/flickerBomb.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/flickerBomb.v"/>
+          <Attr Name="ImportTime" Val="1730471414"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -273,8 +321,260 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/isColourPixel.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/isColourPixel.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/isColourPixel.v"/>
           <Attr Name="ImportTime" Val="1729766205"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/master_tx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/master_tx.v"/>
+          <Attr Name="ImportTime" Val="1730014720"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/p1_win.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/p1_win.v"/>
+          <Attr Name="ImportTime" Val="1730540849"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/p2_win.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/p2_win.v"/>
+          <Attr Name="ImportTime" Val="1730540625"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/p3_win.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/p3_win.v"/>
+          <Attr Name="ImportTime" Val="1730541059"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/p4_win.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/p4_win.v"/>
+          <Attr Name="ImportTime" Val="1730541011"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderAl.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderAl.v"/>
+          <Attr Name="ImportTime" Val="1730648040"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderAl0.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderAl0.v"/>
+          <Attr Name="ImportTime" Val="1730648061"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderAl1.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderAl1.v"/>
+          <Attr Name="ImportTime" Val="1730648080"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderBomb.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderBomb.v"/>
+          <Attr Name="ImportTime" Val="1730665857"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderExplosion.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderExplosion.v"/>
+          <Attr Name="ImportTime" Val="1730653597"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderJones.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones.v"/>
+          <Attr Name="ImportTime" Val="1730471414"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderJones0.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones0.v"/>
+          <Attr Name="ImportTime" Val="1730542981"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderJones1.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones1.v"/>
+          <Attr Name="ImportTime" Val="1730543005"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderJones2.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones2.v"/>
+          <Attr Name="ImportTime" Val="1730543011"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderJones3.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones3.v"/>
+          <Attr Name="ImportTime" Val="1730543019"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderRob.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob.v"/>
+          <Attr Name="ImportTime" Val="1730471414"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderRob0.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob0.v"/>
+          <Attr Name="ImportTime" Val="1730471414"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderRob1.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob1.v"/>
+          <Attr Name="ImportTime" Val="1730471414"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderRob2.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob2.v"/>
+          <Attr Name="ImportTime" Val="1730471414"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderWiz.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz.v"/>
+          <Attr Name="ImportTime" Val="1730471414"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderWiz0.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz0.v"/>
+          <Attr Name="ImportTime" Val="1730543034"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderWiz1.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz1.v"/>
+          <Attr Name="ImportTime" Val="1730543038"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderWiz2.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz2.v"/>
+          <Attr Name="ImportTime" Val="1730543047"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/renderWiz3.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz3.v"/>
+          <Attr Name="ImportTime" Val="1730543058"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/slave_tx.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/slave_tx.v"/>
+          <Attr Name="ImportTime" Val="1730014811"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/staticBomb.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/staticBomb.v"/>
+          <Attr Name="ImportTime" Val="1730543067"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/uart_rx_new.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/uart_rx_new.v"/>
+          <Attr Name="ImportTime" Val="1730014786"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/uart_tx_new.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/uart_tx_new.v"/>
+          <Attr Name="ImportTime" Val="1730014831"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -282,7 +582,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/var_clock.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/var_clock.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/var_clock.v"/>
           <Attr Name="ImportTime" Val="1728705191"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -291,46 +591,50 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/BomberGameTopLevel.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BomberGameTopLevel.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/BomberGameTopLevel.v"/>
           <Attr Name="ImportTime" Val="1729767679"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/FreeBomb.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/FreeBomb.v"/>
+          <Attr Name="ImportTime" Val="1729769043"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ButtonDebouncing.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/ButtonDebouncing.v"/>
+          <Attr Name="ImportTime" Val="1728835476"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Player.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sources_1/new/Player.v"/>
+          <Attr Name="ImportTime" Val="1728739249"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/BomberMan/archive_project_summary.txt">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/archive_project_summary.txt"/>
+          <Attr Name="ImportTime" Val="1730729877"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/archive_project_summary.txt"/>
-      <File Path="$PSRCDIR/sources_1/new/master_tx.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/slave_tx.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/uart_rx_new.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/uart_tx_new.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="BomberGameTopLevel"/>
@@ -341,7 +645,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/my_constraints.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/constrs_1/new/my_constraints.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/constrs_1/new/my_constraints.xdc"/>
           <Attr Name="ImportTime" Val="1729767621"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -353,20 +657,30 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sim_1/new/PlayerMovementDUT.v">
+      <File Path="$PSRCDIR/sim_1/new/FreeBombDut.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sim_1/new/PlayerMovementDUT.v"/>
-          <Attr Name="ImportTime" Val="1729675895"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sim_1/new/FreeBombDut.v"/>
+          <Attr Name="ImportTime" Val="1729586211"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/FreeBombDut.v">
+      <File Path="$PSRCDIR/sim_1/new/BombSimulation.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sim_1/new/FreeBombDut.v"/>
-          <Attr Name="ImportTime" Val="1729586211"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sim_1/new/BombSimulation.v"/>
+          <Attr Name="ImportTime" Val="1730565649"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/PlayerMovementDUT.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sim_1/new/PlayerMovementDUT.v"/>
+          <Attr Name="ImportTime" Val="1729675895"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -375,7 +689,7 @@
       <File Path="$PSRCDIR/sim_1/new/ExplodeBombdut.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sim_1/new/ExplodeBombdut.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../../../../../../../../../../../../../../../../../../../../../../NUS/EE2026/BigTeamProject/BomberMan.srcs/sim_1/new/ExplodeBombdut.v"/>
           <Attr Name="ImportTime" Val="1729673625"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -384,7 +698,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="PlayerMovementDUT"/>
+        <Option Name="TopModule" Val="FreeBombDut"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>

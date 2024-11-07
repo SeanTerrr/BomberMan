@@ -23,11 +23,8 @@
 module master_tx(
     input clk,
     input reset,
-    input [6:0] player_min_x,
-    input [6:0] player_max_x,
-    input [5:0] player_min_y,
-    input [5:0] player_max_y,
-    input BtnCPlayer,
+    input btnU, btnD, btnL, btnR, btnC, initiate_reset,     
+    input [3:0] led,
     output tx
 );
     reg start;
@@ -59,7 +56,8 @@ module master_tx(
             case (state)
                 IDLE: begin
                     // Encode the coordinates into a 32-bit data word
-                    tx_data <= {player_min_x, player_max_x, player_min_y, player_max_y, BtnCPlayer, 5'b0};                                                                        
+                    tx_data <= {btnU,btnD,btnL,btnR,btnC,
+                                led,initiate_reset,22'b0};                                                                        
                     start <= 1;
                     state <= START;
                 end

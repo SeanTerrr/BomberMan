@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Bomb(
-    input clk6p25m,
+module Bomb #(parameter Maxbombcount = 5,parameter dimension = 9,parameter[2:0] maxplayerbomb = 2)(
+    input clk6p25m, clk,
     input[12:0] pixel_index ,
     input[6:0] Player1Block , Player2Block,Player3Block,Player4Block,
     input Player1DebouncedBtnC , Player2DebouncedBtnC, Player3DebouncedBtnC, Player4DebouncedBtnC, 
@@ -30,80 +30,143 @@ module Bomb(
     input start_game,
     output reg bomb = 1'b0 ,
     output ExplosionAnimations ,
-    output player1_die , player2_die ,player3_die,player4_die
+    output player1_die , player2_die ,player3_die,player4_die,
+    output reg[3:0] playerHitLimit,
+    output reg [15:0] pixel_data,
+    output [Maxbombcount-1 : 0] ActiveBombs
 );  
-
-    wire[3:0] xBlock;
-    wire[2:0] yBlock;
-    wire[6:0] BombMinX , BombMaxX;
-    wire[5:0] BombMinY , BombMaxY;
-    parameter dimension = 9;
-    parameter[6:0] Maxbombcount = 3; 
+    
     //seems like got bug with dropping more than n-2 bombs where
     //it will explode where the player is
     //increasing bomb count significantly increase bitstream gen time
     //decrease bomb count for testing purposes
     
-    //look to remove this
-    reg[25:0] Bombs [0:Maxbombcount-1];
     reg[6:0] BombsBlock [0:Maxbombcount-1];
     wire[6:0] ExplosionRadiusBlocks[0 : Maxbombcount-1][0:7];
-    wire[69:0] ExplosionBlocks;
     wire[Maxbombcount-1 :0] bombs;
     wire[Maxbombcount-1 :0] explode;
-    wire[Maxbombcount-1 : 0] ActiveBombs;
+    wire[Maxbombcount-1 : 0] immediate_explode;
     wire[Maxbombcount-1 : 0] player1_died;
     wire[Maxbombcount-1 : 0] player2_died;
     wire[Maxbombcount-1 : 0] player3_died;
     wire[Maxbombcount-1 : 0] player4_died;
-    wire[Maxbombcount-1 : 0] immediate_explode;
-    wire[(Maxbombcount * 2) - 1 : 0] WhichPlayerBomb;
-    wire[7:0] FreeBomb;
-    wire edge_registered;
+    wire[Maxbombcount-1 : 0] edge_registered;
     wire[Maxbombcount-1 : 0] ExplosionAnimation;
     reg[69:0] blocksAffectedByExplosion;
+    wire[6:0] PlayerBlocks [0:3];
+    wire [15:0] bombPixelData [0:Maxbombcount - 1];
     
     assign player1_die = |player1_died;
     assign player2_die = |player2_died;
     assign player3_die = |player3_died;
     assign player4_die = |player4_died;
     
+    assign PlayerBlocks[0] = Player1Block;
+    assign PlayerBlocks[1] = Player2Block;
+    assign PlayerBlocks[2] = Player3Block;
+    assign PlayerBlocks[3] = Player4Block;
     integer k;
-   
+    reg [1:0] configuration [0:Maxbombcount-1];
     initial begin
+        
         for(k =0 ; k < Maxbombcount ; k = k+1)
         begin
-            Bombs[k] = 26'b0;
             BombsBlock[k] = 7'b0;
         end
+        configuration[0] = 0;
+        configuration[1] = 0;
+        configuration[2] = 1;
+        configuration[3] = 1;
+        configuration[4] = 2;
+        configuration[5] = 3;
     end
     
-    FreeBomb #(Maxbombcount)FindFreeBomb(
-        .clk6p25m(clk6p25m) , 
-        .ActiveBombs(ActiveBombs) ,
-        .FreeBomb(FreeBomb) , 
-        .Player1DebouncedBtnC(Player1DebouncedBtnC) ,
-        .Player2DebouncedBtnC(Player2DebouncedBtnC) ,
-        .Player3DebouncedBtnC(Player3DebouncedBtnC) ,
-        .Player4DebouncedBtnC(Player4DebouncedBtnC) ,
-        .edge_registered(edge_registered),
-        .player1_isReviving(player1_isReviving),
-        .player2_isReviving(player2_isReviving),
-        .player3_isReviving(player3_isReviving),
-        .player4_isReviving(player4_isReviving),
+    
+    wire[3:0] player_revive = {player4_isReviving, player3_isReviving,player2_isReviving,player1_isReviving};
+    wire[3:0] btns = {Player4DebouncedBtnC , Player3DebouncedBtnC, Player2DebouncedBtnC, Player1DebouncedBtnC};
+    wire[1:0] player_count [0:3];
+    genvar j;
+    
+    assign player_count[0] = (ActiveBombs[0] & ActiveBombs[1]) ? 2 : (~ActiveBombs[0] & ~ActiveBombs[1]) ? 0 : 1;
+    assign player_count[1] = (ActiveBombs[2] & ActiveBombs[3]) ? 2 : (~ActiveBombs[2] & ~ActiveBombs[3]) ? 0 : 1;
+    assign player_count[2] = ActiveBombs[4];
+    assign player_count[3] = ActiveBombs[5];
+        
+    FreeBombIndi Freebomb1(
+        .clk6p25m(clk6p25m) ,
+        .ActiveBombs(ActiveBombs[0]),
+        .PlayerDebouncedBtnC(btns[configuration[0]]),
         .start_game(start_game),
-        .WhichPlayerBomb(WhichPlayerBomb)
+        .player_isReviving(player_revive[configuration[0]]),
+        .edge_registered(edge_registered[0]),
+        .player_count(player_count[configuration[0]]),
+        .handle_case(0)
     );
     
-    genvar j;
+    FreeBombIndi Freebomb2(
+        .clk6p25m(clk6p25m) ,
+        .ActiveBombs(ActiveBombs[1]),
+        .PlayerDebouncedBtnC(btns[configuration[1]]),
+        .start_game(start_game),
+        .player_isReviving(player_revive[configuration[1]]),
+        .edge_registered(edge_registered[1]),
+        .player_count(player_count[configuration[1]]),
+        .handle_case(1)
+    );
+    
+    FreeBombIndi Freebomb3(
+        .clk6p25m(clk6p25m) ,
+        .ActiveBombs(ActiveBombs[2]),
+        .PlayerDebouncedBtnC(btns[configuration[2]]),
+        .start_game(start_game),
+        .player_isReviving(player_revive[configuration[2]]),
+        .edge_registered(edge_registered[2]),
+        .player_count(player_count[configuration[2]]),
+        .handle_case(0)
+    );
+    
+    FreeBombIndi Freebomb4(
+        .clk6p25m(clk6p25m) ,
+        .ActiveBombs(ActiveBombs[3]),
+        .PlayerDebouncedBtnC(btns[configuration[3]]),
+        .start_game(start_game),
+        .player_isReviving(player_revive[configuration[3]]),
+        .edge_registered(edge_registered[3]),
+        .player_count(player_count[configuration[3]]),
+        .handle_case(1)
+    );
+    
+    FreeBombIndi Freebomb5(
+        .clk6p25m(clk6p25m) ,
+        .ActiveBombs(ActiveBombs[4]),
+        .PlayerDebouncedBtnC(btns[configuration[4]]),
+        .start_game(start_game),
+        .player_isReviving(player_revive[configuration[4]]),
+        .edge_registered(edge_registered[4]),
+        .player_count(player_count[configuration[4]]),
+        .handle_case(0)
+    );
+    
+    FreeBombIndi Freebomb6(
+        .clk6p25m(clk6p25m) ,
+        .ActiveBombs(ActiveBombs[5]),
+        .PlayerDebouncedBtnC(btns[configuration[5]]),
+        .start_game(start_game),
+        .player_isReviving(player_revive[configuration[5]]),
+        .edge_registered(edge_registered[5]),
+        .player_count(player_count[configuration[5]]),
+        .handle_case(0)
+    );
     
     generate
         for(j = 0 ; j < Maxbombcount ; j = j+1)
         begin : mod_inst
-            isColourPixel BombDrop(
-                .min_x(Bombs[j][25:19]) , .max_x(Bombs[j][18:12]) , 
-                .min_y(Bombs[j][11:6]) , .max_y(Bombs[j][5:0]) , 
-                .pixel_index(pixel_index) , .isColouredPixel(bombs[j])
+              renderBomb renderbomby(.centreX(((BombsBlock[j] % 10) * 9)+3+4),                              
+                   .centreY(((BombsBlock[j] / 10) * 9)+1+4), 
+                   .pixel_index(pixel_index), .clock(clk6p25m),                                                          
+                   .edge_registered(edge_registered[j]),
+                   .isBomb(bombs[j]),                              
+                   .pixel_data(bombPixelData[j])
             );
         end
     endgenerate
@@ -113,10 +176,9 @@ module Bomb(
         begin : mod_inst1
             BombCounter Bombcounter(
                 .immediate_explode(immediate_explode[j]),
-                .clk6p25m(clk6p25m) , 
-                .active(ActiveBombs[j]) , .FreeBomb(FreeBomb) , 
-                .MyNumber(j) ,
-                .edge_registered(edge_registered)
+                .clk6p25m(clk6p25m), 
+                .active(ActiveBombs[j]) ,
+                .edge_registered(edge_registered[j])
             );
         end
     endgenerate
@@ -140,14 +202,12 @@ module Bomb(
             );
         end
     endgenerate
-    
+    //can look to remove this below
     generate
         for(j = 0 ; j < Maxbombcount ; j = j+1)
         begin : mod_inst3
             TriggerExplosion #(Maxbombcount) TriggerForBlockJ(
                 .BombBlock(BombsBlock[j]) ,
-                .WhichPlayerBomb(WhichPlayerBomb[j*2 +1 : j*2]),
-                .Player1SW(SW[15:13]),
                 .active(ActiveBombs[j]),
                 .blocksAffectedByExplosion(blocksAffectedByExplosion),
                 .immediate_explode(immediate_explode[j])
@@ -155,28 +215,19 @@ module Bomb(
         end
     endgenerate
     
-    wire[6:0] PlayerBlock;
-    //////////////////////////////////////////////////////////////////////////////////////////////////////
-    assign PlayerBlock = SW[5] ? Player1Block : SW[6] ? Player2Block : SW[7] ? Player3Block : Player4Block;
     //assign to different players according to signals
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
     assign ExplosionAnimations = |ExplosionAnimation;
-    assign xBlock = (PlayerBlock % 10) + 1;
-    assign yBlock = (PlayerBlock / 10) + 1;
-    assign BombMinX = 3 + (xBlock - 1) * dimension;
-    assign BombMaxX = 3 + (xBlock * dimension) - 1;
-    assign BombMinY = 1 + (yBlock - 1) * dimension;
-    assign BombMaxY = 1 + (yBlock * dimension) - 1;
-    
+
+    integer iterate;
     always @ (posedge clk6p25m)
     begin
-        if(FreeBomb != 99)
+        for(iterate = 0; iterate < Maxbombcount ; iterate = iterate + 1)
         begin
-            BombsBlock[FreeBomb] <= PlayerBlock;
-            Bombs[FreeBomb][25:19] <= BombMinX;
-            Bombs[FreeBomb][18:12] <= BombMaxX;
-            Bombs[FreeBomb][11:6] <= BombMinY;
-            Bombs[FreeBomb][5:0] <= BombMaxY;
+            if(ActiveBombs[iterate] & edge_registered[iterate])
+            begin
+                BombsBlock[iterate] <= PlayerBlocks[configuration[iterate]];
+            end
         end
         
         bomb <= 1'b0; 
@@ -185,6 +236,7 @@ module Bomb(
             if(bombs[k] == 1'b1 && ActiveBombs[k] == 1'b1)
             begin
                 bomb <= 1'b1;
+                pixel_data <= bombPixelData[k];
             end
         end
     end
@@ -208,4 +260,5 @@ module Bomb(
             end
         end
     end
+    
 endmodule

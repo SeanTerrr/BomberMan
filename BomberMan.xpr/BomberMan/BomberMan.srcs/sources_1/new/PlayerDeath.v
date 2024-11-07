@@ -22,9 +22,9 @@
 
 module PlayerDeath(
     input clk200hz,
-    input start_game ,
+    input initiate_reset,
     input player1_isReviving ,
-    output reg[7:0] player1_deathcount = 0
+    output reg[2:0] player1_deathcount = 0
 );
 
     reg incremented = 0;
@@ -40,7 +40,7 @@ module PlayerDeath(
             incremented <= 0;
         end
         
-        if(start_game == 0)
+        if(initiate_reset)
         begin
             player1_deathcount <= 0;
         end

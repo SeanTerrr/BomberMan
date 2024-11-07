@@ -38,7 +38,6 @@ module ExplodeBomb(
     wire ImmutableUp , ImmutableDown, ImmutableLeft, ImmutableRight;
     wire[6:0] Up , Down , Left , Right;
     
-    
     assign Up = BombBlock - 10;
     assign Down = BombBlock + 10;
     assign Left = BombBlock - 1;

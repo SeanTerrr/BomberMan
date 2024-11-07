@@ -33,8 +33,7 @@ module PlayerMovement
     input start_game,
     output reg[6:0] PlayerMinX , PlayerMaxX ,
     output reg[5:0] PlayerMinY , PlayerMaxY ,
-    output [6:0] PlayerBlock ,
-    output player
+    output [6:0] PlayerBlock
 );
      
    SquareTracker  #(dimensions,minX,maxX,minY,maxY) TrackPlayer1Square(
@@ -67,12 +66,6 @@ module PlayerMovement
         .isCollisionWithImmutable(Collide_Immutable)
     );
     
-    Player Player1(
-        .pixel_index(pixel_index) ,
-        .PlayerMinX(PlayerMinX) , .PlayerMaxX(PlayerMaxX) , 
-        .PlayerMinY(PlayerMinY) , .PlayerMaxY(PlayerMaxY) ,
-        .player(player)
-    );
     
     wire clk_40hz;
     var_clock clk40hz(.clk(clk100mhz) , .M(32'd1249999) , .SLOW_CLOCK(clk_40hz));

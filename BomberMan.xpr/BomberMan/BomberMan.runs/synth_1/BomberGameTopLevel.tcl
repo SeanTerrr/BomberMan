@@ -17,46 +17,78 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.cache/wt [current_project]
-set_property parent.project_path C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/AnimateDeath.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/BlockColourPixel.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/BlockIsImmutable.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/Bomb.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/BombCounter.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/ButtonDebouncing.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/CentreConcreteBlock.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/CollisionCheck.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/ConcreteBlocks.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/Counter_100MHZ.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/ExplodeBomb.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/FreeBomb.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/GameReset.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/Oled_Display.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/PixelControl.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/PixelDataControl.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/Player.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/PlayerDeath.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/PlayerMovement.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/SevenSegDisplay.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/SquareTracker.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/TriggerExplosion.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/Walls.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/WithinXY.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/isColourPixel.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/var_clock.v
-  C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/sources_1/new/BomberGameTopLevel.v
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/AnimateDeath.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/BlockColourPixel.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/BlockIsImmutable.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/Bomb.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/BombCounter.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/CentreConcreteBlock.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/CollisionCheck.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/ConcreteBlocks.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/Counter_100MHZ.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/DrawScreen.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/EndScreen.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/ExplodeBomb.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/FreeBombIndi.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/GameReset.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/Oled_Display.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/PixelControl.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/PixelDataControl.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/PlayerDeath.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/PlayerMovement.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/ResetScreen.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/SevenSegDisplay.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/SquareTracker.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/StartingScreen.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/TriggerExplosion.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/Walls.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/WithinXY.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/buttonGate.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/endGame.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/flickerBomb.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/isColourPixel.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/master_tx.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/p1_win.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/p2_win.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/p3_win.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/p4_win.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderAl.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderAl0.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderAl1.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderBomb.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderExplosion.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones0.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones1.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones2.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderJones3.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob0.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob1.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderRob2.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz0.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz1.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz2.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/renderWiz3.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/slave_tx.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/staticBomb.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/uart_rx_new.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/uart_tx_new.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/var_clock.v}
+  {C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/sources_1/new/BomberGameTopLevel.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -66,8 +98,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/constrs_1/new/my_constraints.xdc
-set_property used_in_implementation false [get_files C:/NUS/EE2026/EE2026/BomberMan.xpr/BomberMan/BomberMan.srcs/constrs_1/new/my_constraints.xdc]
+read_xdc {{C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/constrs_1/new/my_constraints.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/rexko/Downloads/S2_03_LOW TSE_QUAN TENG_REX KOH_SEAN TER_Improvements_Archive.xpr/BomberMan/BomberMan.srcs/constrs_1/new/my_constraints.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
